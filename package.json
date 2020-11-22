@@ -2,6 +2,7 @@
   "author": "Kenneth Auchenberg",
   "dependencies": {
     "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
     "form-data": "^3.0.0",
     "got": "^11.8.0",
     "tough-cookie": "^4.0.0",
@@ -21,7 +22,7 @@
   ],
   "license": "MIT",
   "main": "./dist/index.js",
-  "name": "personal-capital",
+  "name": "personal-capital-sdk",
   "repository": {
     "type": "git",
     "url": "https://github.com/auchenberg/node-personal-capital.git"

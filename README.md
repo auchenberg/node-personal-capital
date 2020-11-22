@@ -7,13 +7,13 @@ Authentication to the Personal Capital API is a bit tricky, as it's cookie-based
 ### Installation
 
 ```bash
-$ npm install personal-capital
+$ npm install personal-capital-sdk
 ```
 
 ### Example
 
 ```
-const PersonalCapital = require("personal-capital").PersonalCapital;
+const PersonalCapital = require("personal-capital-sdk").PersonalCapital;
 
 let pc = new PersonalCapital({
   cookiePath: "./pc-state.json",

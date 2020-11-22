@@ -1,4 +1,6 @@
-const PersonalCapital = require("../dist/index").PersonalCapital;
+require("dotenv").config();
+
+const PersonalCapital = require("personal-capital-sdk").PersonalCapital;
 
 let pc = new PersonalCapital({
   cookiePath: "./pc-cookie.json",
@@ -8,7 +10,10 @@ let pc = new PersonalCapital({
   try {
     await pc.login(process.env.USERNAME, process.env.PASSWORD);
     // Get accounts
-    let accounts = await pc.getAccounts();
+    // let accounts = await pc.getAccounts();
+
+    pc.updateInvestmentCashBalance("51066090", 57532.3);
+
     console.log("accounts", accounts);
   } catch (err) {
     console.log("err", err);
