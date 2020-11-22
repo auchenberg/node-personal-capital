@@ -10,6 +10,5 @@ export enum AuthLevel {
 
 export enum TwoFactorMode {
   "SMS",
-  "PHONE",
   "EMAIL",
 }
