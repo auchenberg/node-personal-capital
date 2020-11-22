@@ -1,0 +1,38 @@
+{
+  "author": "Kenneth Auchenberg",
+  "dependencies": {
+    "debug": "^4.3.1",
+    "form-data": "^3.0.0",
+    "got": "^11.8.0",
+    "tough-cookie": "^4.0.0",
+    "tough-cookie-file-store": "^2.0.2"
+  },
+  "description": "Node.js SDK for Personal Capital",
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "^3.9.3"
+  },
+  "homepage": "https://github.com/auchenberg/node-personal-capital",
+  "keywords": [
+    "personal capital",
+    "personalcapital",
+    "api",
+    "mint"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "personal-capital",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auchenberg/node-personal-capital.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install",
+    "prebuild": "rimraf dist",
+    "prepare": "tsc",
+    "watch": "tsc -w"
+  },
+  "types": "./dist/index.d.js",
+  "version": "1.0.0"
+}
